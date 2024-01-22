@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453045093850",
+    "project_id": "mushafapp-e0957",
+    "storage_bucket": "mushafapp-e0957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453045093850:android:06615a2b8f06839ac7ace3",
+        "android_client_info": {
+          "package_name": "org.noortaibah.mushaf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453045093850-rlp0kb6eqiqkk7q8thkru01kdmcmibd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGNYVo6A8qF3I_eir_M3nm8zgwuobbmLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453045093850-rlp0kb6eqiqkk7q8thkru01kdmcmibd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

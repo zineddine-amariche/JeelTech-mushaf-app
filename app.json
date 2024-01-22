@@ -1,0 +1,81 @@
+{
+  "name": "MushafApp",
+  "displayName": "مصحف الجزائر الرسمي",
+  "expo": {
+    "name": "مصحف الجزائر الرسمي",
+    "slug": "MushafDZ",
+    "scheme": "mushafapp",
+    "version": "0.9.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/app-icon-all.png",
+    "splash": {
+      "image": "./assets/images/splash-logo-all.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F3F4EF"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "icon": "./assets/images/app-icon-android-legacy.png",
+      "package": "org.noortaibah.mushaf",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
+        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+      },
+      "splash": {
+        "image": "./assets/images/splash-logo-android-universal.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F3F4EF"
+      },
+      "googleServicesFile": "./google_services/google-services.json"
+    },
+    "ios": {
+      "icon": "./assets/images/app-icon-ios.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "org.noortaibah.mushaf",
+      "splash": {
+        "image": "./assets/images/splash-logo-ios-mobile.png",
+        "tabletImage": "./assets/images/splash-logo-ios-tablet.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F3F4EF"
+      },
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      },
+      "googleServicesFile": "./google_services/GoogleService-Info.plist"
+    },
+    "web": {
+      "favicon": "./assets/images/app-icon-web-favicon.png",
+      "splash": {
+        "image": "./assets/images/splash-logo-web.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F3F4EF"
+      },
+      "bundler": "metro"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics",
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "newArchEnabled": false
+          },
+          "android": {
+            "newArchEnabled": false,
+            "extraMavenRepos": ["$rootDir/../../../node_modules/@notifee/react-native/android/libs"]
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
+}
